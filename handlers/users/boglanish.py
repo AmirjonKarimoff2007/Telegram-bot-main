@@ -11,6 +11,8 @@ from aiogram.types import ReplyKeyboardRemove
 async def yes_or_no(message: types.Message):
   await message.answer("Rostdan ham admin bilan bog'lanishni hohlaysizmi?",
                        reply_markup=check)
+  await message.delete()
+
 
 
 @dp.message_handler(text='admincall')
@@ -27,5 +29,4 @@ async def yes_or_no(call: CallbackQuery):
 @dp.callback_query_handler(text='Yoq')
 @dp.message_handler(text="📞Bog'lanish")
 async def yes_or_no(call: CallbackQuery):
-  await call.message.delete()
   await call.message.delete()
