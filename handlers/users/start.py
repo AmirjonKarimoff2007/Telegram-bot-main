@@ -6,7 +6,6 @@ from aiogram.types import InlineKeyboardMarkup,InlineKeyboardButton
 from keyboards.inline.subscrtion import channels
 from loader import bot, dp
 from aiogram import types
-from utils.misc import subscription
 from keyboards.default.boglanish_button import boglanish
 import pyautogui
 import time
